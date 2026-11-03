@@ -12,8 +12,8 @@ PYTHON_VERSIONS = ["3.10", "3.11", "3.12", "3.13"]
 PYTHON_DEFAULT = "3.13"
 
 TRACING_DEPS = [
-    "opentelemetry-exporter-otlp-proto-http==1.44.0",
-    "opentelemetry-exporter-otlp-proto-grpc==1.44.0",
+    "opentelemetry-exporter-otlp-proto-http==1.45.2",
+    "opentelemetry-exporter-otlp-proto-grpc==1.45.2",
 ]
 # Test dependencies (mirrored from pyproject.toml [dependency-groups].test)
 TEST_DEPS = [
