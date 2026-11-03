@@ -826,7 +826,7 @@ impl PythonPredictor {
                     })?;
 
                 #[allow(deprecated)]
-                let raw_input_dict = py_input.downcast::<PyDict>().map_err(|_| {
+                let raw_input_dict = py_input.cast::<PyDict>().map_err(|_| {
                     PredictionError::InvalidInput("Input must be a JSON object".to_string())
                 })?;
 
@@ -909,7 +909,7 @@ impl PythonPredictor {
                     })?;
 
                 #[allow(deprecated)]
-                let raw_input_dict = py_input.downcast::<PyDict>().map_err(|_| {
+                let raw_input_dict = py_input.cast::<PyDict>().map_err(|_| {
                     PredictionError::InvalidInput("Input must be a JSON object".to_string())
                 })?;
 
@@ -1119,7 +1119,7 @@ impl PythonPredictor {
                 .map_err(|e| PredictionError::InvalidInput(format!("Invalid JSON input: {}", e)))?;
 
             #[allow(deprecated)]
-            let raw_input_dict = py_input.downcast::<PyDict>().map_err(|_| {
+            let raw_input_dict = py_input.cast::<PyDict>().map_err(|_| {
                 PredictionError::InvalidInput("Input must be a JSON object".to_string())
             })?;
 
@@ -1246,7 +1246,7 @@ impl PythonPredictor {
                 .map_err(|e| PredictionError::InvalidInput(format!("Invalid JSON input: {}", e)))?;
 
             #[allow(deprecated)]
-            let raw_input_dict = py_input.downcast::<PyDict>().map_err(|_| {
+            let raw_input_dict = py_input.cast::<PyDict>().map_err(|_| {
                 PredictionError::InvalidInput("Input must be a JSON object".to_string())
             })?;
 
