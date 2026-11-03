@@ -491,7 +491,7 @@ checksum = "sha256:d2af4376053458f283d74980b49dc0d61d3ef9d9b8684c5b25bd64b73e116
 url = "https://github.com/astral-sh/ruff/releases/download/0.14.13/ruff-x86_64-pc-windows-msvc.zip"
 
 [[tools.rust]]
-version = "1.93.0"
+version = "1.99.1"
 backend = "core:rust"
 
 [tools.rust.options]
